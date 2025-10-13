@@ -5,6 +5,15 @@ use std::cmp::Ordering;
 use rand::Rng;
 
 fn main() {
+    ch03_1_변수와가변성();
+    // ch02_guessing_game();
+}
+
+fn ch03_1_변수와가변성() {
+    println!("테스트!!");
+}
+
+fn ch02_guessing_game() {
     println!("Guess the number!");
 
     // thread_rng() -> OS가 시드(seed)를 정하고 현재 스레드에서만 사용되는 특별한 정수생성기

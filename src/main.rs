@@ -56,4 +56,6 @@ fn main() {
     let x: i32 = 5; // x: i32 이라고 정확한 타입 명시함.
     let y = 10;
     println!("x = {} and y = {} and x+y = {}", x, y, x + y);
+    
+    // 주석 추가
 }

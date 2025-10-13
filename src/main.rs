@@ -49,13 +49,11 @@ fn main() {
 
     // shadow sample
     println!("<shadow sample>");
-    let x = 5; // i32 일 것이라고 타입 추론.
+    // let x = 5; // i32 일 것이라고 타입 추론.
     // warning: unused variable: `x`
     // shadow 되기 전의 x 를 사용하지 않으면 warning 발생하네..
 
     let x: i32 = 5; // x: i32 이라고 정확한 타입 명시함.
     let y = 10;
     println!("x = {} and y = {} and x+y = {}", x, y, x + y);
-    
-    // 주석 추가
 }

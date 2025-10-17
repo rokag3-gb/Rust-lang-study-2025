@@ -38,22 +38,12 @@ pub fn main() {
         println!("You guessed. [{}] {}", guess, "!!!");
 
         match guess.cmp(&secret_number) {
-            Ordering::Less => println!("Too small!"),
-            Ordering::Greater => println!("Too big!"),
+            Ordering::Less => println!("너무 큽니다. 좀 낮추세요!"),
+            Ordering::Greater => println!("너무 작아요. 좀 올리세요!"),
             Ordering::Equal => {
-                println!("You win!");
+                println!("You win! 숫자를 맞추셨습니다!");
                 break;
             },
         }
     }
-
-    // shadow sample
-    println!("<shadow sample>");
-    // let x = 5; // i32 일 것이라고 타입 추론.
-    // warning: unused variable: `x`
-    // shadow 되기 전의 x 를 사용하지 않으면 warning 발생하네..
-
-    let x: i32 = 5; // x: i32 이라고 정확한 타입 명시함.
-    let y = 10;
-    println!("x = {} and y = {} and x+y = {}", x, y, x + y);
 }

@@ -38,7 +38,7 @@ pub fn main() {
     /*************************************************************/
     
     let mut spaces = "   ";
-    // spaces = spaces.len(); // Error!
+    // let spaces = spaces.len(); // Error!
 }
 
 // 상수는 불변성 그 자체이며 타입을 지정해야 함.

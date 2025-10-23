@@ -10,7 +10,9 @@ pub fn main() {
     // thread_rng() -> OS가 시드(seed)를 정하고 현재 스레드에서만 사용되는 특별한 정수생성기
     // 1부터 100 사이의 숫자를 랜덤 생성
 
-    let secret_number = rand::thread_rng().gen_range(1, 101); // 이상 ~ 미만
+    // let secret_number = rand::thread_rng().gen_range(1, 101); // 이상 ~ 미만
+
+    let secret_number = rand::rng().random_range(1..101);
     // println!("The secret number is: {}", secret_number);
 
     loop {

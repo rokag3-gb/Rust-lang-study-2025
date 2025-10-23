@@ -91,6 +91,13 @@ fn change(some_string: &mut String) {
     some_string.push_str(", world");
 }
 
+// fn dangle() -> &String { // dangle은 String의 참조자를 반환합니다
+//     let s = String::from("hello"); // s는 새로운 String입니다
+// 
+//     &s // 우리는 String s의 참조자를 반환합니다.
+// } // 여기서 s는 스코프를 벗어나고 버려집니다. 이것의 메모리는 사라집니다.
+// // // 위험하군요!
+
 fn no_dangle() -> String { // 댕글링 참조자가 발생하지 않도록 s를 직접 반환하면 된다.
     let s = String::from("hello");
     s

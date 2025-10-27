@@ -8,6 +8,7 @@ mod ch04_2_references_borrowing;
 mod ch04_3_slices;
 mod ch05_1_Structure;
 mod ch05_2_Structure_Examples;
+mod ch05_3_Method_syntax;
 
 fn main() {
     // ch02_1_guessing_game::main();
@@ -19,5 +20,6 @@ fn main() {
     // ch04_2_references_borrowing::main();
     // ch04_3_slices::main();
     // ch05_1_Structure::main();
-    ch05_2_Structure_Examples::main();
+    // ch05_2_Structure_Examples::main();
+    ch05_3_Method_syntax::main();
 }

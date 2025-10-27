@@ -9,7 +9,8 @@
 // mod ch05_1_Structure;
 // mod ch05_2_Structure_Examples;
 // mod ch05_3_Method_syntax;
-mod ch06_1_enum;
+// mod ch06_1_enum;
+mod ch06_2_Match_control_flow;
 
 fn main() {
     // ch02_1_guessing_game::main();
@@ -23,5 +24,6 @@ fn main() {
     // ch05_1_Structure::main();
     // ch05_2_Structure_Examples::main();
     // ch05_3_Method_syntax::main();
-    ch06_1_enum::main();
+    // ch06_1_enum::main();
+    ch06_2_Match_control_flow::main();
 }

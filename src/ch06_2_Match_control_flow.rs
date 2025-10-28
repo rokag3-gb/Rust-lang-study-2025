@@ -75,7 +75,15 @@ impl Coin {
             Coin::Quarter(s) => {
                 println!("State quarter from {:?}!", s);
                 25
-            }
+            },
         }
     }
+
+    // fn value_count(&self) -> u8 {
+    //     let mut count = 0;
+    //     match self {
+    //         Coin::Quarter(state) => println!("State quarter from {:?}!", state),
+    //         _ => count += 1, // 모든 동전을 세고 싶은 동시에
+    //     }
+    // }
 }

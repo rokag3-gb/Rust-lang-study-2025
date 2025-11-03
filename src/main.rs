@@ -16,7 +16,8 @@
 // use crate::ch07_garden::ch07_vegetables::Asparagus;
 // use std::collections::HashMap;
 // mod ch08_1_vector;
-mod ch08_2_string_utf8;
+// mod ch08_2_string_utf8;
+mod ch09_error_handling;
 
 fn main() {
     // ch02_1_guessing_game::main();
@@ -54,5 +55,6 @@ fn main() {
     // map.insert(1,2);
 
     // ch08_1_vector::main();
-    ch08_2_string_utf8::main();
+    // ch08_2_string_utf8::main();
+    ch09_error_handling::main();
 }

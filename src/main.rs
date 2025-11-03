@@ -17,7 +17,10 @@
 // use std::collections::HashMap;
 // mod ch08_1_vector;
 // mod ch08_2_string_utf8;
-mod ch09_error_handling;
+// mod ch09_error_handling;
+// mod ch10_generic;
+// mod ch10_2_trait;
+mod ch10_3_lifetime;
 
 fn main() {
     // ch02_1_guessing_game::main();
@@ -56,5 +59,8 @@ fn main() {
 
     // ch08_1_vector::main();
     // ch08_2_string_utf8::main();
-    ch09_error_handling::main();
+    // ch09_error_handling::main();
+    // ch10_generic_trait_lifetime::main();
+    // ch10_2_trait::main();
+    ch10_3_lifetime::main();
 }

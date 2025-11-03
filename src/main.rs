@@ -15,7 +15,8 @@
 // pub mod ch07_garden;
 // use crate::ch07_garden::ch07_vegetables::Asparagus;
 // use std::collections::HashMap;
-mod ch08_1_vector;
+// mod ch08_1_vector;
+mod ch08_2_string_utf8;
 
 fn main() {
     // ch02_1_guessing_game::main();
@@ -52,5 +53,6 @@ fn main() {
     // let mut map = HashMap::new();
     // map.insert(1,2);
 
-    ch08_1_vector::main();
+    // ch08_1_vector::main();
+    ch08_2_string_utf8::main();
 }

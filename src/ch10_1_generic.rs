@@ -116,12 +116,12 @@ pub fn main() {
 //         format!("(Read more from {}...)", self.summarize_author())
 //     }
 // }
-// 
+//
 // pub struct NewsArticle {
 //     pub headline: String,
 //     pub content: String,
 // }
-// 
+//
 // impl Summary for NewsArticle {
 //     fn summarize(&self) -> String {
 //         format!("{} - {}", self.headline, self.content)

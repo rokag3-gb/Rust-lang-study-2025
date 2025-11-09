@@ -24,7 +24,7 @@ pub fn main() {
 
     // Result로 복구 가능한 에러 처리하기
 
-    // let greeting_file_result = File::open("hello.txt");
+    let greeting_file_result = File::open("hello.txt");
 
     // let greeting_file = match greeting_file_result {
     //     Ok(file) => file,
@@ -111,6 +111,8 @@ pub fn main() {
 
     // 나쁜 상태에 처하게 될 가능성이 있을 때는 코드에 panic!을 넣는 것이 바람직
     // 나쁜 상태 = 예기치 못한 무언가, 터프한 입력 등등
+
+    // [Unit-type] 아무 타입도 안가진다. (like void)
 }
 
 /****************************************************************************************/

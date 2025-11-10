@@ -41,7 +41,7 @@ mod tests {
         assert_eq!(result, 4);
     }
 
-    // #[test]
+    #[test]
     fn intentional_panic() {
         panic!("Make this test fail");
     }
@@ -53,7 +53,7 @@ mod tests {
     // assert_eq! -> 동등 (equality) 하면 테스트 통과
     // assert_ne! -> 동등하지 않으면 (inequality) 테스트 통과
 
-    // #[test]
+    #[test]
     fn it_adds_two() {
         assert_eq!(4, add_two(2));
     }
@@ -97,11 +97,11 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrac
 
     // should_panic! macro로 패닉 발생 검사하기
 
-    // #[test]
-    // #[should_panic]
-    // fn greater_than_100() {
-    //     Guess::new(200);
-    // }
+    #[test]
+    #[should_panic]
+    fn greater_than_100() {
+        Guess::new(200);
+    }
 
     // 함수에서 패닉이 발생해야 하는데 (should_panic), 실제로는 패닉이 발생하지 않아서 실패했다는 의미
 
@@ -171,7 +171,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrac
     }
 
     #[test]
-    // #[ignore] // 테스트 무시하고 싶을 경우
+    #[ignore] // 테스트 무시하고 싶을 경우
     fn one_hundred() {
         assert_eq!(102, add_two(100));
     }
@@ -182,11 +182,11 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrac
 
     // 테스트 모듈과 #[cfg(test)]
 
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
+    // #[test]
+    // fn it_works() {
+    //     let result = 2 + 2;
+    //     assert_eq!(result, 4);
+    // }
 
     // 비공개 함수 테스트하기
 
@@ -222,7 +222,7 @@ struct Guess {
 
 impl Guess {
     pub fn new(value: i32) -> Guess {
-        // if value < 1 { // || value > 100
+        // if value < 1 || value > 100 {
         //     panic!("Guess value는 1~100 사이어야 하는데, {} 이다.", value);
         // }
 
@@ -239,8 +239,8 @@ impl Guess {
 /*********************************************/
 
 fn greeting(name: &str) -> String {
-    format!("Hello {}!", name)
-    // format!("Hello!")
+    // format!("Hello {}!", name)
+    format!("Hello!")
 }
 
 pub fn add_two(a: i32) -> i32 {

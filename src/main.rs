@@ -20,7 +20,8 @@
 // mod ch09_error_handling;
 // mod ch10_1_generic;
 // mod ch10_2_trait;
-mod ch10_3_lifetime;
+// mod ch10_3_lifetime;
+mod ch11_1_test_writing;
 
 fn main() {
     // ch02_1_guessing_game::main();
@@ -62,5 +63,6 @@ fn main() {
     // ch09_error_handling::main();
     // ch10_1_generic::main();
     // ch10_2_trait::main();
-    ch10_3_lifetime::main();
+    // ch10_3_lifetime::main();
+    ch11_1_test_writing::main();
 }

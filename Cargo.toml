@@ -1,5 +1,5 @@
 [package]
-name = "Rust-lang-study-2025"
+name = "rust_study_2025"
 version = "0.1.0"
 edition = "2024"
 authors = ["Jungwoo Kim <jwoo.kim@nextsecurities.com>"]
